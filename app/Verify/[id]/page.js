@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const getCardById = async (id) => {
   try {
-      const res = await fetch(`http://localhost:3000/api/cards/${id}`, {
+      const res = await fetch(`https://banking-sys.vercel.app/api/cards/${id}`, {
           cache: "no-store",
       });
 
@@ -19,7 +19,7 @@ const getCardById = async (id) => {
 
 const getTrfs = async () => {
   try {
-      const res = await fetch('http://localhost:3000/api/trfs', {
+      const res = await fetch('https://banking-sys.vercel.app/api/trfs', {
           cache: 'no-store',
       });
       

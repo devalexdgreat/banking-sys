@@ -3,7 +3,7 @@ import TrfCard from "../components/TrfCard";
 
 const getTrfs = async () => {
     try {
-        const res = await fetch('http://localhost:3000/api/trfs', {
+        const res = await fetch('https://banking-sys.vercel.app/api/trfs', {
             cache: 'no-store',
         });
         

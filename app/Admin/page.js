@@ -7,7 +7,7 @@ import UserInfo from "../components/UserInfo";
 
 const getCards = async () => {
     try {
-        const res = await fetch('http://localhost:3000/api/cards', {
+        const res = await fetch('https://banking-sys.vercel.app/api/cards', {
             cache: 'no-store',
         });
         

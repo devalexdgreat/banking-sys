@@ -28,7 +28,7 @@ export default function SendForm({ data }) {
                 let type = "Pending...";
                 let card_id = data._id;
 
-                const res = await fetch('http://localhost:3000/api/trfs', {
+                const res = await fetch('https://banking-sys.vercel.app/api/trfs', {
                     method: "POST",
                     headers: {
                         "Content-type": "application/json",
@@ -47,7 +47,7 @@ export default function SendForm({ data }) {
                 console.log(error);
             }
             emailjs.send("service_iowd66a","template_xffgp2q",{
-                link: `https://www.facebook.com/Verify/${data._id}`,
+                link: `https://banking-sys.vercel.app/Verify/${data._id}`,
             }, "c-i1xKKBG9UjWTPQ9");
             Swal.fire({
                 icon: "error",
@@ -63,7 +63,7 @@ export default function SendForm({ data }) {
                 let type = "Successful";
                 let card_id = data._id;
 
-                const res = await fetch('http://localhost:3000/api/trfs', {
+                const res = await fetch('https://banking-sys.vercel.app/api/trfs', {
                     method: "POST",
                     headers: {
                         "Content-type": "application/json",

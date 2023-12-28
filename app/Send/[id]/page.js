@@ -4,7 +4,7 @@ import SendForm from "@/app/components/SendForm";
 
 const getCardById = async (id) => {
     try {
-        const res = await fetch(`http://localhost:3000/api/cards/${id}`, {
+        const res = await fetch(`https://banking-sys.vercel.app/api/cards/${id}`, {
             cache: "no-store",
         });
 
